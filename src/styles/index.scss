@@ -1,5 +1,5 @@
-$bg-color: pink;
+@import "variables";
 
-.blue {
-  background: $bg-color;
+.pink {
+  color: $color-pink;
 }

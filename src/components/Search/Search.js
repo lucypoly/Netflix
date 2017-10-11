@@ -1,10 +1,12 @@
 import React from 'react';
-import styles from './styles.modules.scss';
+import PropTypes from 'prop-types';
 
-export default class Search extends React.Component {
-    render() {
-        return (
-            <h1 className={styles.blue}>Search</h1>
-        );
-    }
-}
+const Search = ({ title }) => (
+  <h1 className="pink search">{title}</h1>
+);
+
+Search.propTypes = {
+  title: PropTypes.string.isRequired,
+};
+
+export default Search;
